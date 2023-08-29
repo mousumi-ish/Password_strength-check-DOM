@@ -16,3 +16,14 @@ h1 {
 body {
   text-align: center;
 }
+.section {
+  background-color: white;
+  font-size: large;
+  font-weight: 300;
+
+  margin: 20px;
+  padding: 20px;
+  border: black;
+  border-style: solid;
+  text-align: left;
+}
