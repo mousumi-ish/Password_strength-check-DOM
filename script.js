@@ -6,14 +6,8 @@ function passwordValue() {
   progressBarColor(num * 5, text);
 }
 function progressBarColor(num, text) {
-  if (num < 40) {
-    document.querySelector(".strengthMeter").style.background = "red";
-    text.innerHTML = "Should be longer";
-  } else if (num < 60) {
-    document.querySelector(".strengthMeter").style.background = "orange";
-    text.innerHTML = "Pretty good";
-  } else if (num > 60) {
-    document.querySelector(".strengthMeter").style.background = "green";
-    text.innerHTML = "Grrrreat!";
-  }
+  document.querySelector(".strengthMeter").style.background =
+    num < 8 ? "red" : num < 12 ? "orange" : "green";
+  text.innerHTML =
+    num < 8 ? "Should be longer" : num < 12 ? "Pretty good" : "Grrrreat!";
 }
