@@ -8,31 +8,32 @@
   </head>
   <body>
     <h1>How good is your password?</h1>
-    <div class="container">
-      <section class="section">
-        <p>
-          <label for="password">Password</label>
-          <input
-            class="password"
-            name="password"
-            type="password"
-            id="password"
-            placeholder="password? "
-            oninput="passwordValue()"
-          />
-        </p>
-        <p>
-          <label for="Strength">Password Strength</label>
-          <meter
-            class="strengthMeter"
-            name="meter"
-            id="strengthMeter"
-            value="0"
-            max="100"
-          ></meter>
-        </p>
-      </section>
-    </div>
+
+    <section class="section">
+      <p>
+        <label for="password">Password</label>
+        <input
+          class="password"
+          name="password"
+          type="password"
+          id="password"
+          placeholder="password? "
+          oninput="passwordValue()"
+        />
+      </p>
+      <p>
+        <label for="Strength">Password Strength</label>
+        <meter
+          class="strengthMeter"
+          name="meter"
+          id="strengthMeter"
+          value="0"
+          max="100"
+        ></meter>
+      </p>
+      <p class="response" id="response">Password :</p>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>
