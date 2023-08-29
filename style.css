@@ -1,18 +1,18 @@
+:root {
+  background: #ff0000;
+}
 .container {
-  height: 20pc;
-
+  height: 10pc;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: rgb(216, 216, 143);
 }
-:root {
-  --header: #3a0fca;
+h1 {
+  --header: #3e17bd;
   --background: #e0e0e0;
 }
 
 body {
-  background-color: var(--background);
-  font-family: sans-serif;
   text-align: center;
 }
